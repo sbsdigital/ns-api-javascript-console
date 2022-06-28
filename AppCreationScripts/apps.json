@@ -1,0 +1,39 @@
+{
+  "Sample": {
+    "Title": "A Node.js console application secured by MSAL Node on Microsoft identity platform",
+    "Level": 200,
+    "Client": "Node.js console app"
+  },
+  "AppRegistrations": [
+    {
+      "x-ms-id": "client",
+      "x-ms-name": "msal-node-console",
+      "x-ms-version": "2.0",
+      "requiredResourceAccess": [
+        {
+          "x-ms-resourceAppName": "Microsoft Graph",
+          "resourceAppId": "00000003-0000-0000-c000-000000000000",
+          "resourceAccess": [
+            {
+              "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+              "type": "Scope",
+              "x-ms-name": "User.Read.All"
+            }
+          ]
+        }
+      ],
+      "codeConfigurations": [
+        {
+          "settingFile": "/.env",
+          "replaceTokens": {
+            "appId": "7430531e-8ce8-4eaf-ac9b-c4e83aba04ac",
+            "tenantId": "fa07cb78-c80f-48b3-b560-7d4f6d566228",
+            "clientSecret": "GcM8Q~R.IcKEW.7~TzZTMiqt7L1cPBEdsPGgtb5p",
+            "authorityEndpointHost": "https://login.microsoftonline.com/",
+            "msgraphEndpointHost": "https://graph.microsoft.com/"
+          }
+        }
+      ]
+    }
+  ]
+}
